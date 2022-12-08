@@ -1,0 +1,26 @@
+#1 :
+- fill age_nans with method no1. 
+- drop : cabin, name, ticket
+- scale all as standardscaler (assume numeric continous features) 
+- train svc
+-result - train set ccuracy 0.845 and on cv_5 accuracy 0.833
+- kaggle - accuracy 0.78
+
+#2 :
+- fill age_nans with method no1.
+- turn all features to categorical - turn name into last_name and cabin nans into a category 
+- scale all as standardscaler (assume numeric continous features) 
+- drop : passengerid
+- train svc
+-result - train set ccuracy 0.846 and on cv_5 accuracy 0.825
+- kaggle - accuracy 0.75
+
+
+#3 :
+- fill age_nans with method no1.
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale no scale (assume numeric continous features) 
+- drop : passengerid
+- train RF
+-result - train set ccuracy 0.8 and on cv_5 accuracy 0.79
+- kaggle - accuracy 0.76
