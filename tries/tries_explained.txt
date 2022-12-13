@@ -88,11 +88,41 @@
 -result - train set ccuracy 0.863 and on cv_5 accuracy 0.826
 - kaggle - accuracy 0.758
 
-#9:
+#11:
 - fill age_nans. masters and lonely passengers
 - transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
 - scale - standardscaler for numerical, and onehot for categorical 
 - drop : 'survived','passengerid','name', 'sibsp', 'ticket','cabin'
 - train svc kernel rbf
 -result - train set ccuracy 0.836 and on cv_5 accuracy 0.819
+- kaggle - accuracy 0.787
+
+#12:
+- fill age_nans with full method
+- fill cabin nans except - single female 
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.839 and on cv_5 accuracy 0.815
+- kaggle - accuracy 0.779
+
+#13:
+- fill age_nans with full method
+- fill cabin nans full method
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.84 and on cv_5 accuracy 0.811
+- kaggle - accuracy 0.779
+
+#13:
+- fill age_nans with full method
+- fill cabin nans full method (filling nans for singles)
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.838 and on cv_5 accuracy 0.816
 - kaggle - accuracy 0.787
