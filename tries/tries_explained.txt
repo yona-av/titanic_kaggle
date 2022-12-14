@@ -115,9 +115,9 @@
 - drop : 'survived','passengerid','name', 'sibsp', 'ticket'
 - train svc kernel rbf
 -result - train set ccuracy 0.84 and on cv_5 accuracy 0.811
-- kaggle - accuracy 0.779
+- kaggle - accuracy 0.789
 
-#13:
+#14:
 - fill age_nans with full method
 - fill cabin nans full method (filling nans for singles)
 - transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
@@ -126,3 +126,88 @@
 - train svc kernel rbf
 -result - train set ccuracy 0.838 and on cv_5 accuracy 0.816
 - kaggle - accuracy 0.787
+
+#15:
+- fill age_nans full method
+- fill cabin nans full method
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale no scale
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train xgb
+-result - train set ccuracy 0.871 and on cv_5 accuracy 0.818
+- kaggle - accuracy 0.758
+
+#16: (might be a lucky result) same as previous. (though I ran it from scratch so maybe some feature were restarted )
+- fill age_nans with full method
+- fill cabin nans full method
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.845 and on cv_5 accuracy 0.824
+- kaggle - accuracy 0.794
+
+
+#17: 
+- fill age_nans with full method
+- fill cabin nans full method
+- take log of "fare" and "age" to normalize it 
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.83 and on cv_5 accuracy 0.813
+- kaggle - accuracy 0.77
+
+#18: 
+- fill age_nans with full method
+- fill cabin nans full method
+- take log of "fare" and "age" to normalize it . increase corr to survival
+- introduce feature  famsize = sibsp+parch
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.83 and on cv_5 accuracy 0.813
+- kaggle - accuracy 0.77
+
+#19: 
+- fill age_nans with full method
+- fill cabin nans full method
+- change name into title only
+- introduce feature  famsize = sibsp+parch
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.855 and on cv_5 accuracy 0.83
+- kaggle - accuracy 0.781
+
+#20: 
+- fill age_nans with full method
+- fill cabin nans full method
+- change name into title only
+- take log of "fare" and "age" to normalize it . increase corr to survival
+- introduce feature  famsize = sibsp+parch
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.847 and on cv_5 accuracy 0.833
+- kaggle - accuracy 0.77
+
+#21: twek 1 model
+- fill age_nans with full method
+- fill cabin nans full method
+- change name into title only
+- take log of "fare" and "age" to normalize it . increase corr to survival
+- introduce feature  famsize = sibsp+parch
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel poly
+-result - train set ccuracy 0.865 and on cv_5 accuracy 0.821
+- kaggle - accuracy 0
+
+
+
