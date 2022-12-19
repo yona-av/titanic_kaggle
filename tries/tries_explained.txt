@@ -240,3 +240,66 @@
 -result - train set ccuracy 0.871 and on cv_5 accuracy 0.827
 - kaggle - accuracy 0.7488
 
+
+#26: (might be a lucky result) same as previous. (though I ran it from scratch so maybe some feature were restarted )
+- fill age_nans with full method new
+- fill cabin nans internet method
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.849 and on cv_5 accuracy 0.819
+- kaggle - accuracy 0.787
+
+#27: (might be a lucky result) same as previous. (though I ran it from scratch so maybe some feature were restarted )
+- fill age_nans with full method new
+- fill cabin nans internet method
+- new feature ageclass
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.84 and on cv_5 accuracy 0.815
+- kaggle - accuracy 0.77 (maybe cause correlated to age and pclass)
+
+#28: (might be a lucky result) same as previous. (though I ran it from scratch so maybe some feature were restarted )
+- fill age_nans with full method new
+- fill cabin nans internet method + my
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.84 and on cv_5 accuracy 0.815
+- kaggle - accuracy 0.78
+
+#29: (might be a lucky result) same as previous. (though I ran it from scratch so maybe some feature were restarted )
+- fill age_nans with full method new
+- fill cabin nans full method + taking into acount singlehood
+- parch transormed as a continous variable
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.838 and on cv_5 accuracy 0.817
+- kaggle - accuracy 0.78
+
+#30: (might be a lucky result) same as previous. (though I ran it from scratch so maybe some feature were restarted )
+- fill age_nans with full method new
+- fill cabin nans partial with the rest with just filna
+- livability feature 
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.838 and on cv_5 accuracy 0.817
+- kaggle - accuracy 0.775
+
+#29:
+- fill age_nans with full method new
+- fill cabin nans full methodnew
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.838 and on cv_5 accuracy 0.817
+- kaggle - accuracy 0.775
