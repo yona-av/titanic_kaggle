@@ -294,12 +294,23 @@
 -result - train set ccuracy 0.838 and on cv_5 accuracy 0.817
 - kaggle - accuracy 0.775
 
-#29:
+#31:
 - fill age_nans with full method new
 - fill cabin nans full methodnew
 - transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
 - scale - standardscaler for numerical, and onehot for categorical 
 - drop : 'survived','passengerid','name', 'sibsp', 'ticket'
 - train svc kernel rbf
+-result - train set ccuracy 0.838 and on cv_5 accuracy 0.817
+- kaggle - accuracy 0.775
+
+32:
+- fill age_nans with full method adjusted
+- fill cabin nans full methodnew
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-find best threshold
 -result - train set ccuracy 0.838 and on cv_5 accuracy 0.817
 - kaggle - accuracy 0.775
