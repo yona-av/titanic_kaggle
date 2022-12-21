@@ -314,3 +314,69 @@
 -find best threshold
 -result - train set ccuracy 0.838 and on cv_5 accuracy 0.817
 - kaggle - accuracy 0.775
+
+33:
+- fill age_nans with full method adjusted
+- fill cabin nans full method
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.844 and on cv_5 accuracy 0.82
+- kaggle - accuracy 0.789
+
+34:
+- fill age_nans with full method adjusted and presentable. get age from a distribution
+- fill cabin nans full method
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.844 and on cv_5 accuracy 0.82
+- kaggle - accuracy 0.784
+
+35:
+- fill age_nans with full method adjusted and presentable. get age from a distribution
+- fill cabin nans full method
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.84 and on cv_5 accuracy 0.81. recall: 0.7
+- kaggle - accuracy 0.779
+
+37:
+- fill age_nans with full method adjusted
+- fill cabin nans full method include lone passenger
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.87 and on cv_5 accuracy 0.822 recall 0.716
+- kaggle - accuracy 0.77
+
+38:
+- fill age_nans with full method adjusted
+- fill cabin nans full method include lone passenger
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- combine low frequency cabin numbers (< 3 )
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.845 and on cv_5 accuracy 0.816 recall 0.71
+- kaggle - accuracy 0.77
+
+
+39:
+- fill age_nans with full method adjusted
+- fill cabin nans full method include lone passenger
+- transorm categorical features into labeled categories (turn name into last_name and cabin nans into a category)
+- combine low frequency cabin numbers (< 3 )
+- new feature - cabin frequency 
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid','name', 'sibsp', 'ticket'
+- train svc kernel rbf
+-result - train set ccuracy 0.845 and on cv_5 accuracy 0.816 recall 0.71
+- kaggle - accuracy 0.76
+
+

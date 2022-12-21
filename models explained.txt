@@ -1,0 +1,30 @@
+The Models exlained here include different tries . 
+
+- best_model_finding_threshold -tried to fiend the best threshold in order to improve recall result. in practice got 0.77 or 0.75 on kaggle 
+
+- best_model_livability - added a new feature which called livability. it is the cabin allocation 'd' or 'l' stands for dead or alive . calculated by singlehood of the passenger and class (used before as cabin allocation)
+
+- best_model_new_cabin_method - added the singlehood parameter to the cabon allocation.
+
+- best_model_newage - changed the age method. calculated the mean and std for boys,girls,male,female, and assigned a random value from the distribution .
+#### possible check is to change the lone passenger miss and mr to genereal lone passengers mean and std distribution 
+
+- best model param twek - tried to see accuracy changing when choosing different precentile of features 
+
+- best model param twek1 - tried chamging 'name' into title and transformed 'fare' by taking its log (as well sqrt)  
+
+
+-best model_try_16_fine_tuning - a failed try of tuning parameters . might check it later   
+
+-titanic_standradized_models - basically the base for best_try_16  
+-titanic_standartaized_models_best_score - basically same as the above 
+
+-titanic_standartaized_models_best_with_cabin_nans - basically also best_try_16
+
+try_internet - try of project of someone who primised 81.5. but got lower than me  
+
+titanic project - mostly EDA 
+
+titanic_standardized_models_ageapproach - before cabin_nan method. it is a standatdized model but filing empty cabin nans as a simple category 
+
+titanic_unstandardized_models - full age nan and cabin nan methods. just with unstandardized models 
