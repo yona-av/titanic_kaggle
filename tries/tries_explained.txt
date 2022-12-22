@@ -342,8 +342,8 @@
 - scale - standardscaler for numerical, and onehot for categorical 
 - drop : 'survived','passengerid','name', 'sibsp', 'ticket'
 - train svc kernel rbf
--result - train set ccuracy 0.84 and on cv_5 accuracy 0.81. recall: 0.7
-- kaggle - accuracy 0.779
+-result - cv_5 accuracy 0.82 recall: 0.66
+- kaggle - accuracy 0.8
 
 37:
 - fill age_nans with full method adjusted
@@ -379,4 +379,51 @@
 -result - train set ccuracy 0.845 and on cv_5 accuracy 0.816 recall 0.71
 - kaggle - accuracy 0.76
 
+40:
+- fill age_nans with simple method
+- fill cabin nans simple method
+- add title, last name features
+- transorm categorical features into labeled categories 
+- make p-value test 
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid', 'name', 'age', 'sibsp', 'ticket', 'last_name'
+- train svc kernel rbf
+-result - train set ccuracy 0.845 and on cv_5 accuracy 0.816 recall 0.71
+- kaggle - accuracy 0.76
+
+41:
+- fill age_nans with simple method
+- fill cabin nans simple method
+- add title, last name features
+- transorm categorical features into labeled categories 
+- make p-value test 
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid', 'name', 'sibsp', 'ticket', 'last_name'
+- train svc kernel rbf
+-result - train set ccuracy 0.845 and on cv_5 accuracy 0.816 recall 0.71
+- kaggle - accuracy 0.78
+
+42:
+- fill age_nans with simple method
+- fill cabin nans simple method
+- add title, last name features
+- transorm categorical features into labeled categories 
+- make p-value test 
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid', 'name', 'sibsp', 'ticket', 'last_name'
+- train xgb
+-result - train set ccuracy 0.845 and on cv_5 accuracy 0.816 recall 0.71
+- kaggle - accuracy 0.77
+
+43:
+- fill age_nans with simple method
+- fill cabin nans simple method
+- add title, last name features
+- transorm categorical features into labeled categories 
+- make p-value test 
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid', 'name', 'sibsp', 'ticket', 'last_name'
+- train logreg
+-result -  cv_5 accuracy 0.831 recall 0.73
+- kaggle - accuracy 0.787
 
