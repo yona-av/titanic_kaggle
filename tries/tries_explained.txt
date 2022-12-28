@@ -475,3 +475,27 @@
 -result - tcv_5 accuracy 0.82
 - kaggle - accuracy
 
+
+52:
+- fill age_nans with simple method
+- fill cabin nans simple method
+- add title, last name features
+- transorm categorical features into labeled categories 
+- make p-value test 
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid', 'name', 'age', 'sibsp', 'ticket', 'last_name'
+- train svc kernel rbf c = 0.79
+-result - tcv_5 accuracy 0.838 
+- kaggle - accuracy 0.8
+
+52:
+- fill age_nans with simple method
+- fill cabin nans simple method
+- add title, last name features
+- transorm categorical features into labeled categories 
+- make p-value test 
+- scale - standardscaler for numerical, and onehot for categorical 
+- drop : 'survived','passengerid', 'name', 'age', 'sibsp', 'ticket', 'last_name'
+- train svc kernel rbf c =200 , ovo, auto scale
+-result - tcv_5 accuracy 0.847
+- kaggle - accuracy 0.8
