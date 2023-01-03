@@ -17,6 +17,6 @@ More on the logic and the reasoning of the steps could be found in the [EDA note
 
 ## ML model
 - Tried few models to give a prediction : SVC, SGD, Logistic Regression, Random Forest, KNN and XGBoost.
-- Did fine tuning of hyperparametres on SVC, the classifier that gave the best prediction accuracy on kaggle 0.8.
-- Retrained the model without the hyperparametres tuning after it gave a worse result 0.79.
+- Did fine tuning of hyperparameters on SVC, the classifier that gave the best prediction accuracy on kaggle 0.8.
+- Retrained the model without the hyperparameters  tuning after it gave a worse result 0.79.
 
